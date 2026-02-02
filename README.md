@@ -49,7 +49,7 @@ The toolkit must be unlocked to use all the features - this is what Moonglasses 
 
 <div align="justify">
 	
-1. [Download the files](https://cdn.discordapp.com/attachments/1372207073592606720/1420092594192515164/Moonglasses-Build-Release-586.zip?ex=69632e8a&is=6961dd0a&hm=9bd605db7234f45adeec09fd0e9097999740df4f4f0a0b0dfd7ee669939c1dbb&).
+1. [Download the files](https://drive.google.com/file/d/1NX0hTN55le2II_XMR99lr9-7IR9rcBXa/view?usp=drive_link).
 2. Run `unlock.bat`, this unblocks all the .dll files that Windows complains about.
 3. Extract `dxgi.dll` file and MoonGlasses Folder into the 'Baldurs Gate 3 Toolkit' folder (`steamapps\common\Baldurs Gate 3 Toolkit`).
 4. Run the editor. If it crashes, the `.dlls` may be blocked, still. Right click them and go to Properties. On the bottom make sure it doesn't say they're blocked.
