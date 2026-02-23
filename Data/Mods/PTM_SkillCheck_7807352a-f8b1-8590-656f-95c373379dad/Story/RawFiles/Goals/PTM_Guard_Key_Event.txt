@@ -1,0 +1,19 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_PTM_Guard((CHARACTER)PTM_Dwarf_Guard_ab51df8b-266a-4ef7-a323-13c8f547bba9);
+KBSECTION
+IF
+FlagSet((FLAG)PTM_GuardKey_6e35f9ae-7c5a-c722-6b13-cc999f96b85e, _speaker, _dialog)
+AND
+DB_PTM_Guard(_guard)
+AND
+DB_Players(_Player)
+THEN
+CharacterMoveTo(_guard, (ITEM)INTERACT_DOOR_Single_Dungeon_Abbey_B_000_545ec410-a068-404d-86f1-3566223c76d5, "Walk", "Here");
+Unlock((ITEM)INTERACT_DOOR_Single_Dungeon_Abbey_B_000_545ec410-a068-404d-86f1-3566223c76d5);
+ShowNotification(_Player, "Success");
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
