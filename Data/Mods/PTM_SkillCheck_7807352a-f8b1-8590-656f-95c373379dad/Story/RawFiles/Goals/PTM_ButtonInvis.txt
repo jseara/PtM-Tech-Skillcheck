@@ -1,0 +1,13 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+LevelLoaded("GAMEPLAY_Tavern")
+THEN
+SetVisible((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647,0);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"

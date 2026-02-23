@@ -1,0 +1,26 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+DB_PTM_Button((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647);
+KBSECTION
+IF
+EnteredTrigger(_Player, (TRIGGER)EventTrigger_000_e4b5c026-505e-4a0e-b27b-421d30b21c15)
+AND
+DB_PTM_Button(_button)
+AND
+DB_Players(_Player)
+THEN
+RequestPassiveRoll(_Player, _Player,"SkillCheck","Perception",(DIFFICULTYCLASS)Act1_Medium_fa621d38-6f83-4e42-a55c-6aa651a75d46, 0, "PTM_ButtonResult");
+
+PROC
+PROC_RollResult("PTM_ButtonSearch",_Player,_button,1)
+THEN
+ShowNotification(_Player, "Ping!");
+SetVisible((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647,1);
+SetCanInteract((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647,1);
+PROC_PlayPerceptionRevealEffect((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647, "PTM_ButtonSearch");
+//SetFlag("PTM_ButtonChecked",(ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647,1);
+EXITSECTION
+
+ENDEXITSECTION
+ParentTargetEdge "__Start"
