@@ -3,10 +3,13 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
-QRY
-IsTagged((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647, (TAG)_Pressed, 0)
+//Son_of_Khaine
+//OP ---
+// ------
+// Very basic, if player uses the button, unlock door. If I was being more thorough, there would be logic ensuring it's a 1-time effect with QRYs
+IF
+UseStarted(_Player, (ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647)
 THEN
-SetTag((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647, (TAG)_Pressed);
 Unlock((ITEM)INTERACT_DOOR_Single_Dungeon_Abbey_B_000_545ec410-a068-404d-86f1-3566223c76d5);
 EXITSECTION
 

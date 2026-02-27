@@ -3,6 +3,7 @@ SubGoalCombiner SGC_AND
 INITSECTION
 DB_PTM_Button((ITEM)PTM_VerySmallButton_715b58bb-53b1-46c5-99e2-78e96834a647);
 KBSECTION
+//Unused, leaving here in case I want to try and figure out invisibility through Osiris
 IF
 EnteredTrigger(_Player, (TRIGGER)EventTrigger_000_e4b5c026-505e-4a0e-b27b-421d30b21c15)
 AND

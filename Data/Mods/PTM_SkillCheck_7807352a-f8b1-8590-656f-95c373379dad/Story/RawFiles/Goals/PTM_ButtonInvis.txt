@@ -3,6 +3,7 @@ SubGoalCombiner SGC_AND
 INITSECTION
 
 KBSECTION
+//Unused, leaving here in case I want to try and figure out invisibility through Osiris
 IF
 LevelLoaded("GAMEPLAY_Tavern")
 THEN
